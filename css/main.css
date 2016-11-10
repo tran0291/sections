@@ -1,0 +1,54 @@
+html {
+  box-sizing: border-box;
+  color: #666
+  background-color: #eee9de;
+  font-family: Lato, sans-serif;
+
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  display:inline-block;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html {
+  margin: 1.5rem;
+}
+
+h1 {
+  padding: 0em;
+  text-align: left;
+}
+
+main div {
+  font-size: 1.2rem;
+  font-family: Lato, sans-serif;
+  text-decoration: none;
+  color: #666;
+  display: inline-block;
+  max-width: 20em;
+  padding: 1em;
+  border: 3px solid #666;
+  border-radius: 10px;
+  text-align: left;
+}
+
+
+p {
+
+}
+
+
+img
+
+p
+
+
+- *Maximum width on section inner boxes:* `25em`
+- *Colours:* `#666`, `#333`, `#eee9de`
+- *Paddings:* `1em`, `2em`, `.4em .75em .5em`
+- *Margins:* `1.5rem`
+- *Line-height:* `1.5`
