@@ -1,29 +1,38 @@
 html {
   box-sizing: border-box;
-  font: normal 100%/1.5 "Lato", sans-serif;
+  font: normal 100%/1.5 Lato, sans-serif;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
 }
 
-header {
-  max-width: 25em;
-  margin: 0;
-  display: inline-block;
-}
-
 img {
   width: 100%;
   display: block;
+}
+
+h2 {
+  display: inline-block;
+}
+
+}
+body {
+  text-align: left;
+  background-color: #eee9de;
+  vertical-align: middle;
+  margin: 0;
+  padding: 2em 0;
+}
+
+section {
   text-align: center;
 }
 
-
-body {
-  margin: 0;
-  max-width: none;
-  vertical-align: middle;
+div {
+  padding: .4em;
+  display: inline-block;
+  max-width: 25em;
   text-align: left;
 }
 
@@ -44,7 +53,7 @@ body {
   border-style: solid;
   border-color: #000;
   border-radius: 8px;
-  background-color: #fff;
+  background-color: #eee9de;
   color: #000;
   font-size: 1.125rem;
   text-decoration: none;
@@ -53,11 +62,6 @@ body {
 
 .btn-ghost:hover {
   background-color: #666;
+  color: #fff;
   display: inline-block;
-}
-
-
-.content {
-  display: inline-block;
-  max-width: 25em;
 }
