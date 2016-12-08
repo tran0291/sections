@@ -1,59 +1,63 @@
 html {
   box-sizing: border-box;
-  background-color: #eee9de;
-  font-family: Lato, sans-serif;
-
-  line-height: 1.5;
-  margin: 1.5rem;
-  padding: 2em;
-  display: inline-block;
-  vertical-align: middle;
+  font: normal 100%/1.5 "Lato", sans-serif;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
 }
 
-section {
+header {
   max-width: 25em;
   margin: 0;
   display: inline-block;
 }
 
 img {
-  display: block;
   width: 100%;
+  display: block;
   text-align: center;
 }
 
+
 body {
-  text-align: left;
-  max-width: 25em;
   margin: 0;
-  display: inline-block;
-}
-
-h2 {
-  display: inline-block;
-}
-
-p {
-  display: inline-block;
+  max-width: none;
+  vertical-align: middle;
+  text-align: left;
 }
 
 .btn {
-  font-size: 1rem;
-  font-family: Lato, sans-serif;
-  text-decoration: none;
   display: inline-block;
-  max-width: 20em;
-  padding: .4em .75em .5em;
-  border: 3px solid #666;
-  border-radius: 10px;
-  text-align: left;
+  border: 3px;
+  border-radius: 8px;
+  background-color: #333;
+  color: #fff;
+  padding: .4em .75em .6em;
+  font-size: 1.25rem;
+  text-decoration: none;
+  text-align: center;
 }
 
-.btn:hover {
-  background: #333;
-  color: #eee9de;
+.btn-ghost {
+  padding: .4em .75em .6em;
+  border-style: solid;
+  border-color: #000;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #000;
+  font-size: 1.125rem;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-ghost:hover {
+  background-color: #666;
+  display: inline-block;
+}
+
+
+.content {
+  display: inline-block;
+  max-width: 25em;
 }
