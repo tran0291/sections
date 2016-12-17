@@ -1,6 +1,14 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
 html {
   box-sizing: border-box;
   font: normal 100%/1.5 Lato, sans-serif;
+  padding: .5em;
+  line-height: 1.5em;
 }
 
 *, *::before, *::after {
@@ -10,16 +18,23 @@ html {
 img {
   width: 100%;
   display: block;
+  margin-bottom: .8em;
 }
 
 h2 {
-  display: inline-block;
+  margin: 0;
+  padding: .5em 0;
 }
 
+p {
+  margin-bottom: 1.5rem;
+  padding: 0;
+  font-family: Lato, sans-serif;
 }
+
 body {
-  text-align: left;
   background-color: #eee9de;
+  text-align: left;
   vertical-align: middle;
   margin: 0;
   padding: 2em 0;
@@ -30,10 +45,12 @@ section {
 }
 
 div {
+  background-color: #eee9de;
   padding: .4em;
   display: inline-block;
   max-width: 25em;
   text-align: left;
+  vertical-align: top;
 }
 
 .btn {
@@ -42,7 +59,7 @@ div {
   border-radius: 8px;
   background-color: #333;
   color: #fff;
-  padding: .4em .75em .6em;
+  padding: 1em .75em .6em;
   font-size: 1.25rem;
   text-decoration: none;
   text-align: center;
@@ -64,4 +81,55 @@ div {
   background-color: #666;
   color: #fff;
   display: inline-block;
+}
+
+@media only screen and (min-width: 608px) {
+
+  h2 {
+    margin-bottom: .7em;
+  }
+
+  p {
+    margin-bottom: 2em;
+    max-width: 23em;
+  }
+
+  img {
+    margin-bottom: 1em;
+  }
+
+  .btn {
+    margin-left: .5em;
+  }
+
+  .img {
+    width: 95%;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+
+  div {
+    padding: .8em 0 0;
+    max-width: 23em;
+  }
+
+  div.portrait {
+    margin-left: 2em;
+  }
+
+  h2 {
+    margin: 0 0 1.3em;
+    padding: 0;
+  }
+
+  .btn {
+    margin-top: -.5em;
+    margin-left: .2em;
+  }
+
+  img {
+    margin-top: .75em;
+    width: 100%;
+  }
 }
